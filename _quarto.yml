@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - files/        # resume PDF and other downloads are copied as-is
+
+website:
+  title: "Daniel Zitoli"
+  site-url: https://danielzitoli.github.io   # change to your custom domain if you add one
+  description: "Personal website and project portfolio of Daniel Zitoli."
+  favicon: images/profile.svg
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+    right:
+      - icon: github
+        href: https://github.com/DanielZitoli
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/YOUR-LINKEDIN/
+        aria-label: LinkedIn
+  page-footer:
+    center: "© 2026 Daniel Zitoli · Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+      dark: [darkly, styles.scss]
+    toc: false
+    html-math-method: mathjax
+    smooth-scroll: true
+    link-external-newwindow: true
+
+execute:
+  freeze: auto

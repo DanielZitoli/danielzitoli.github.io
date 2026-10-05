@@ -1,0 +1,6 @@
+# Options applied to every project write-up in this folder.
+toc: true
+toc-location: right
+title-block-banner: true
+code-copy: true
+number-sections: false

@@ -1,0 +1,14 @@
+---
+title: "Projects"
+subtitle: "Things I've built, with write-ups explaining how they work."
+listing:
+  id: project-listing
+  contents: projects/*/index.qmd
+  template: projects.ejs   # custom card layout with GitHub / live-site / write-up links
+  sort: "date desc"
+  categories: true          # tag filter in the sidebar
+  sort-ui: false
+  filter-ui: true
+page-layout: full
+title-block-banner: false
+---
