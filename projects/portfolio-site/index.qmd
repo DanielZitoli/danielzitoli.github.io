@@ -1,0 +1,21 @@
+---
+title: "This Website"
+description: "My personal site, built with Quarto and deployed to GitHub Pages with GitHub Actions."
+date: 2026-10-05
+categories: [Web, Quarto]
+image: thumbnail.svg
+github: https://github.com/DanielZitoli/danielzitoli.github.io
+demo: https://danielzitoli.github.io
+---
+
+## Overview
+
+This site is written in Markdown (`.qmd` files) and rendered to static HTML by
+[Quarto](https://quarto.org). Every push to `main` triggers a GitHub Actions workflow
+that runs `quarto render` and publishes the `_site/` folder to GitHub Pages.
+
+## How the project cards work
+
+The Projects page is a Quarto [listing](https://quarto.org/docs/websites/website-listings.html)
+over `projects/*/index.qmd`. A small custom EJS template (`projects.ejs`) turns each page's
+front matter into a card, adding buttons for the custom `github` and `demo` fields.

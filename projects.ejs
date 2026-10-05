@@ -1,0 +1,27 @@
+```{=html}
+<div class="list project-grid">
+<% for (const item of items) { %>
+  <div class="project-card" <%= metadataAttrs(item) %>>
+    <% if (item.image) { %>
+    <a class="project-thumb" href="<%- item.path %>">
+      <img src="<%- item.image %>" alt="<%= item['image-alt'] || item.title %>" loading="lazy">
+    </a>
+    <% } %>
+    <div class="project-body">
+      <h3 class="project-title listing-title"><a href="<%- item.path %>"><%= item.title %></a></h3>
+      <% if (item.description) { %><div class="project-desc listing-description"><%= item.description %></div><% } %>
+      <% if (item.categories && item.categories.length) { %>
+      <div class="project-tags listing-categories">
+        <% for (const cat of item.categories) { %><span class="project-tag listing-category"><%= cat %></span><% } %>
+      </div>
+      <% } %>
+    </div>
+    <div class="project-links">
+      <% if (item.github) { %><a href="<%- item.github %>" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a><% } %>
+      <% if (item.demo) { %><a href="<%- item.demo %>" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live site</a><% } %>
+      <% if (item.writeup !== false) { %><a href="<%- item.path %>"><i class="bi bi-journal-text"></i> Write-up</a><% } %>
+    </div>
+  </div>
+<% } %>
+</div>
+```

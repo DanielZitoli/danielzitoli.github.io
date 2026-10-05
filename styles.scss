@@ -1,0 +1,88 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$border-radius: .6rem;
+
+/*-- scss:rules --*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ---------- Landing page ---------- */
+.quarto-about-trestles .about-entity .about-image {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .15);
+}
+.about-links .about-link {
+  border-radius: 999px !important;
+}
+
+/* ---------- Project cards ---------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(127, 127, 127, .25);
+  border-radius: $border-radius;
+  overflow: hidden;
+  background: $body-bg;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .12);
+}
+.project-card .project-thumb {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: rgba(127, 127, 127, .08);
+}
+.project-card .project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-card .project-body {
+  padding: 1rem 1.1rem 0;
+  flex: 1;
+}
+.project-card .project-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 .35rem;
+}
+.project-card .project-title a {
+  text-decoration: none;
+  color: inherit;
+}
+.project-card .project-desc {
+  font-size: .92rem;
+  opacity: .85;
+  margin-bottom: .6rem;
+}
+.project-card .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-bottom: .5rem;
+}
+.project-card .project-tag {
+  font-size: .72rem;
+  padding: .1rem .55rem;
+  border-radius: 999px;
+  background: rgba($primary, .12);
+  color: $primary;
+}
+.project-card .project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding: .75rem 1.1rem 1rem;
+  border-top: 1px solid rgba(127, 127, 127, .15);
+}
+.project-card .project-links a {
+  font-size: .85rem;
+  text-decoration: none;
+}

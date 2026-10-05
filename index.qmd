@@ -1,0 +1,43 @@
+---
+title: "Daniel Zitoli"
+subtitle: "Software Engineer · YOUR CURRENT ROLE"
+image: images/profile.svg
+page-layout: full
+about:
+  template: trestles      # other options: jolla, solana, marquee, broadside
+  image-shape: round
+  image-width: 14em
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/YOUR-LINKEDIN/
+    - icon: github
+      text: GitHub
+      href: https://github.com/DanielZitoli
+    - icon: file-earmark-person
+      text: Resume
+      href: files/resume.pdf
+    - icon: envelope
+      text: Email
+      href: mailto:you@example.com
+---
+
+Hi, I'm Daniel 👋 — *replace this paragraph with a short description of yourself.*
+Who you are, what you studied, and what kind of problems you enjoy working on.
+
+## Currently
+
+- 🔭 Working on **YOUR CURRENT WORK** at **YOUR COMPANY / LAB**
+- 🌱 Learning about **SOMETHING YOU'RE EXPLORING**
+- 📫 Best way to reach me: [email](mailto:you@example.com)
+
+## Education
+
+**Your University** | City, Country  
+B.Sc. in Your Program | Sept 2020 – Apr 2025
+
+## Experience
+
+**Company** | Role | 2024 – present
+
+See my [projects](projects.qmd) for things I've built.
